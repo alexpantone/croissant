@@ -1,7 +1,11 @@
 # Croissant Breadboard Prototyping Tool
 The Croissant is a multi-function PCB that lets you use your existing synthesizer equipment with a standard breadboard, with plenty of addons and extras.
+
+![Croissant Render](https://github.com/user-attachments/assets/55de5797-36c9-4250-9751-c105d5e203f0)
+
 One day, I was using a breadboard to test out a circuit design for my synthesizer, and I was trying to hold a headphone jack and a power connector with its cable onto the board with one hand, and another headphone jack with another hand, all while trying to turn a knob on the synth. That made me think there had to be a better way to get synthesizer components onto a breadboard, so I make just such a tool. It's shaped like a C and it goes on a breadboard, so I called it the Croissant.
 The primary feature is a combined footprint for Pocket Rack (Molex SL) and Eurorack (5x2 pin shrouds) power connectors that routes +12v, Ground, and -12v to the power rails of a breadboard via pin headers. This lets you use your existing equipment on a breadboard and power it with the actual synth you will eventually use your designs in. To use the Croissant in this mode, all you need to do is add a power connector of your choice, jump the two pads labeled "0 Ohm Bypass", and install a power switch or jump the pins. Alternative, you can add the capacitors and diodes for reverse polarity protection and NOT jump the 0 Ohm Bypass to guarantee your +12v and -12v lines are always just that.
+
 In addition, the Croissant has two slots that can each fit either a vertical 3.5mm stereo jack, a horizontal jack, or a potentiometer. These connections are routed to the breadboard as well, both on the inside where the power is attached, but also on the edge of the Croissant so you can use more than one of them at a time on your breadboard. There are also two footprints for adding two linear regulators (through-hole or surface-mount in the same footprint) and their associated capacitors. The board is labeled for 3.3v and 5v for microcontrollers such as a Raspberry Pi Pico or an Arduino.
 
 Also, since the price at most PCB fabs is the same either way, I added a small audio amplifier board to the middle of the Croissant that you can snap out. I designed it around an FM8002A based on this video: https://www.youtube.com/watch?v=I4WP1u4hwpw
