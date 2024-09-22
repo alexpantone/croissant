@@ -1,0 +1,51 @@
+Basic Configuration,,,,,,Notes
+Reference,Value,Datasheet,Footprint,Qty,DNP,
+"A1,A2,A3,A4",Conn_01x05_Pin,~,Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,4,,
+D6,LED,~,LED_THT:LED_D3.0mm,1,,Optional
+"P7,P8,P9,P10",Conn_01x02_Pin,~,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,4,,two 2x02 headers will also work
+P1,Pocket Rack Power,~,Connector_Molex:Molex_SL_171971-0003_1x03_P2.54mm_Vertical,1,,Either a Pocket Rack (Molex SL) or a Eurorack (5x2) connector is neededm not both
+P2,Power_2x5,,CATs_Eurosynth:Power_2x5_Vertical,1,,Either a Pocket Rack (Molex SL) or a Eurorack (5x2) connector is neededm not both
+"R1,R2",0 Ohm Bypass,~,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,2,,
+R3,1k,~,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1,,Only needed if installing optional LED
+SW1,Power,~,Button_Switch_THT:SW_CK_JS202011CQN_DPDT_Straight,1,,Can be replaced with jumper wire
+,,,,,,
+Reverse Polarity Protection Configuration,,,,,,
+Reference,Value,Datasheet,Footprint,Qty,DNP,
+"A1,A2,A3,A4",Conn_01x05_Pin,~,Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,4,,
+"C1,C3",1u,~,Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I_Pad1.58x1.35mm_HandSolder,2,,
+"C2,C4",100n,~,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,2,,
+"D1,D2,D3,D4",D,~,Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder,4,,
+D6,LED,~,LED_THT:LED_D3.0mm,1,,Optional
+"P7,P8,P9,P10",Conn_01x02_Pin,~,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,4,,two 2x02 headers will also work
+P1,Pocket Rack Power,~,Connector_Molex:Molex_SL_171971-0003_1x03_P2.54mm_Vertical,1,,Either a Pocket Rack (Molex SL) or a Eurorack (5x2) connector is neededm not both
+P2,Power_2x5,,CATs_Eurosynth:Power_2x5_Vertical,1,,Either a Pocket Rack (Molex SL) or a Eurorack (5x2) connector is neededm not both
+R3,1k,~,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1,,Only needed if installing optional LED
+SW1,Power,~,Button_Switch_THT:SW_CK_JS202011CQN_DPDT_Straight,1,,Can be replaced with jumper wire
+,,,,,,
+5v power,,,,,,
+Reference,Value,Datasheet,Footprint,Qty,DNP,
+C5,10uF,~,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,1,,
+C6,100nF,~,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,1,,
+D5,D,~,Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder,1,,
+"U1,U4",LM7805,https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF,,1,,Either a Through-hole OR a SMD Linear regulator will fit on this footprint
+,,,,,,
+3.3v Power,,,,,,
+Reference,Value,Datasheet,Footprint,Qty,DNP,
+"C8,C9",10uF,~,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,2,,
+C7,1uF,~,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,1,,
+"C10,C11",470n,~,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,2,,
+"U2,U3",LD1117S33TR_SOT223,http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf,,2,,Either a Through-hole OR a SMD Linear regulator will fit on this footprint
+,,,,,,
+Peripherals,,,,,,
+Reference,Value,Datasheet,Footprint,Qty,DNP,
+"J1,J2,J3,J4",AudioJack3,~,-- mixed values --,2,,"Any two of: Vertical headphone jack, horizontal headphone jack, or Through-hole potentiometer"
+"RV1,RV2",any Ohm,~,PersonalFootprints:Potentiometer_Vertical_Slimmer,2,,
+,,,,,,
+Audio Amplifier,,,,,,
+Reference,Value,Datasheet,Footprint,Qty,DNP,
+"C12,C14",1uF,~,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,2,,
+"C10,C11",470n,~,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,2,,
+R4,68k,~,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1,,
+"R5,R6",0 Ohm,~,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,2,,"Place in depicted configuration to route audio to Inverting Input, rotate 98 degrees to route audio to Non-inverting Input"
+R7,20k,~,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1,,
+U5,FM8002A,,Package_SO:SOP-8_3.9x4.9mm_P1.27mm,1,,
