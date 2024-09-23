@@ -1,5 +1,6 @@
 # Croissant Breadboard Prototyping Tool
 The Croissant is a multi-function PCB that lets you use your existing synthesizer equipment with a standard breadboard, with plenty of addons and extras.
+Check out the video! [https://youtu.be/_RGXiyb1UPI?si=hu-ymMrpfnG7xpGm] (https://youtu.be/_RGXiyb1UPI?si=hu-ymMrpfnG7xpGm)
 
 ![Croissant Render](https://github.com/user-attachments/assets/55de5797-36c9-4250-9751-c105d5e203f0)
 
